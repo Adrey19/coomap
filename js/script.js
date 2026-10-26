@@ -29,30 +29,34 @@ const legendaAmpliada = document.getElementById("legenda-ampliada");
 const fecharVisualizador = document.getElementById("fechar-visualizador");
 
 
-fotosGaleria.forEach(function (foto) {
+if (visualizador && fecharVisualizador) {
 
-    foto.addEventListener("click", function () {
+    fotosGaleria.forEach(function (foto) {
 
-        imagemAmpliada.src = foto.src;
+        foto.addEventListener("click", function () {
 
-        imagemAmpliada.alt = foto.alt;
+            imagemAmpliada.src = foto.src;
 
-        const titulo = foto
-            .closest(".foto-galeria")
-            .querySelector("h3")
-            .textContent;
+            imagemAmpliada.alt = foto.alt;
 
-        legendaAmpliada.textContent = titulo;
+            const titulo = foto
+                .closest(".foto-galeria")
+                .querySelector("h3")
+                .textContent;
 
-        visualizador.classList.add("ativo");
+            legendaAmpliada.textContent = titulo;
+
+            visualizador.classList.add("ativo");
+
+        });
 
     });
 
-});
 
+    fecharVisualizador.addEventListener("click", function () {
 
-fecharVisualizador.addEventListener("click", function () {
+        visualizador.classList.remove("ativo");
 
-    visualizador.classList.remove("ativo");
+    });
 
-});
+}
