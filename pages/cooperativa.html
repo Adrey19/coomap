@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Nossa Cooperativa | COOMAP</title>
+    <meta name="description" content="Entenda como a COOMAP organiza e fortalece a produção agroextrativista da comunidade.">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -16,18 +17,18 @@
 <!-- CABEÇALHO -->
 <header>
 
-    <div class="logo">
-        <img src="img/logo-coomap.png" alt="Logo da COOMAP">
-    </div>
+    <a class="logo" href="../index.html" aria-label="COOMAP - página inicial">
+        <img src="../img/logo-coomap.png" alt="COOMAP">
+        <span>COOMAP</span>
+    </a>
 
-    <!-- BOTÃO DO MENU MOBILE -->
-    <button class="menu-mobile" id="menu-mobile">
-        ☰
+    <button class="menu-mobile" id="menu-mobile" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
     </button>
 
-    <nav id="menu">
+    <nav id="menu" aria-label="Navegação principal">
 
-        <a href="index.html">Início</a>
+        <a href="../index.html">Início</a>
 
         <a href="sobre.html">Quem Somos</a>
         <a href="cooperativa.html">Cooperativa</a>
@@ -39,7 +40,7 @@
 
         <a href="galeria.html">Galeria</a>
 
-        <a href="contato.html">Contato</a>
+        <a class="nav-contato" href="contato.html">Contato</a>
 
     </nav>
 
@@ -54,11 +55,8 @@
 
     <div class="secao-cabecalho">
 
-        <span class="secao-subtitulo">
-            IDENTIDADE COOPERATIVISTA
-        </span>
-
-        <h2>Nossa Cooperativa</h2>
+        <span class="secao-subtitulo">Identidade cooperativista</span>
+        <h1>Nossa Cooperativa</h1>
 
         <p class="introducao">
             A COOMAP une moradores da RESEX Arioca Pruanã
@@ -203,18 +201,19 @@
     <footer>
 
         <p>
-            © 2026 COOMAP - Todos os direitos reservados.
+            © <span class="ano-atual">2026</span> COOMAP - Todos os direitos reservados.
         </p>
 
         <p>
             Cooperativa Mista Agroextrativista
             da RESEX Arioca Pruanã
         </p>
+        <a href="contato.html">Entre em contato com a cooperativa</a>
 
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 

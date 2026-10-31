@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Notícias | COOMAP</title>
+    <meta name="description" content="Acompanhe registros e novidades das atividades da COOMAP e da comunidade.">
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<!-- CABEÇALHO -->
+<header>
+
+    <a class="logo" href="../index.html" aria-label="COOMAP - página inicial">
+        <img src="../img/logo-coomap.png" alt="COOMAP">
+        <span>COOMAP</span>
+    </a>
+
+    <button class="menu-mobile" id="menu-mobile" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
+    </button>
+
+    <nav id="menu" aria-label="Navegação principal">
+
+        <a href="../index.html">Início</a>
+
+        <a href="sobre.html">Quem Somos</a>
+        <a href="cooperativa.html">Cooperativa</a>
+
+        <a href="produtos.html">Produtos</a>
+        <a href="noticias.html">Notícias</a>
+
+        <a href="atividades.html">Atividades</a>
+
+        <a href="galeria.html">Galeria</a>
+
+        <a class="nav-contato" href="contato.html">Contato</a>
+
+    </nav>
+
+</header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+
+      <!-- NOTÍCIAS -->
+<section id="noticias">
+
+    <div class="secao-cabecalho">
+
+        <span class="secao-subtitulo">A vida da cooperativa</span>
+        <h1>Notícias e registros</h1>
+
+        <p class="introducao">
+            Veja registros das atividades e dos encontros da comunidade.
+        </p>
+
+    </div>
+
+
+    <div class="galeria">
+
+
+        <!-- FOTO 1 -->
+        <article class="foto-galeria">
+
+            <img
+                src="../img/comap.jpeg"
+                alt="Comunidade da RESEX Arioca Pruanã"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <div class="legenda-foto">
+                <h3>Ação comunitária</h3>
+                <p>Trabalho de preparação de estrutura na comunidade.</p>
+            </div>
+
+        </article>
+
+
+        <!-- FOTO 2 -->
+        <article class="foto-galeria">
+
+            <img
+                src="../img/coomap.jpeg"
+                alt="Moradores reunidos durante atividade comunitária"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <div class="legenda-foto">
+                <h3>Trabalho em conjunto</h3>
+                <p>Cooperados participam de atividade comunitária.</p>
+            </div>
+
+        </article>
+
+
+        <!-- FOTO 3 -->
+        <article class="foto-galeria">
+
+            <img
+                src="../img/comap (3).jpeg"
+                alt="Cooperados trabalhando na implantação de estrutura comunitária"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <div class="legenda-foto">
+                <h3>Preparação</h3>
+                <p>Etapa de instalação de estrutura comunitária.</p>
+            </div>
+
+        </article>
+
+
+        <!-- FOTO 4 -->
+        <article class="foto-galeria">
+
+            <img
+                src="../img/comap (2).jpeg"
+                alt="Instalação de tubulação em atividade comunitária"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <div class="legenda-foto">
+                <h3>Instalação</h3>
+                <p>Preparação coletiva para o desenvolvimento das atividades.</p>
+            </div>
+
+        </article>
+
+
+        <!-- FOTO 5 -->
+        <article class="foto-galeria">
+
+            <img
+                src="../img/capa-materia-ambrosia-copiar.jpg"
+                alt="Cacho de bananas cultivado na região"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <div class="legenda-foto">
+                <h3>Produção local</h3>
+                <p>Banana entre os produtos cultivados na comunidade.</p>
+            </div>
+
+        </article>
+
+
+        <!-- FOTO 6 -->
+        <article class="foto-galeria">
+
+            <img
+                src="../img/comap (4).jpeg"
+                alt="Moradores reunidos em encontro comunitário"
+                loading="lazy"
+                decoding="async"
+            >
+
+            <div class="legenda-foto">
+                <h3>Participação</h3>
+                <p>Encontro de moradores e parceiros da comunidade.</p>
+            </div>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+<!-- VISUALIZADOR DA GALERIA -->
+
+<div class="visualizador" id="visualizador" role="dialog" aria-modal="true" aria-label="Visualizador de imagens">
+
+    <button class="fechar-visualizador" id="fechar-visualizador">
+        &times;
+    </button>
+
+    <img id="imagem-ampliada" src="" alt="Imagem ampliada">
+
+    <p id="legenda-ampliada"></p>
+
+</div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer>
+
+        <p>
+            © <span class="ano-atual">2026</span> COOMAP - Todos os direitos reservados.
+        </p>
+
+        <p>
+            Cooperativa Mista Agroextrativista
+            da RESEX Arioca Pruanã
+        </p>
+        <a href="contato.html">Entre em contato com a cooperativa</a>
+
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

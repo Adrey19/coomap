@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Contato | COOMAP</title>
+    <meta name="description" content="Entre em contato com a COOMAP e veja como chegar à Comunidade Deus Proverá, em Oeiras do Pará.">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -16,18 +17,18 @@
 <!-- CABEÇALHO -->
 <header>
 
-    <div class="logo">
-        <img src="img/logo-coomap.png" alt="Logo da COOMAP">
-    </div>
+    <a class="logo" href="../index.html" aria-label="COOMAP - página inicial">
+        <img src="../img/logo-coomap.png" alt="COOMAP">
+        <span>COOMAP</span>
+    </a>
 
-    <!-- BOTÃO DO MENU MOBILE -->
-    <button class="menu-mobile" id="menu-mobile">
-        ☰
+    <button class="menu-mobile" id="menu-mobile" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
     </button>
 
-    <nav id="menu">
+    <nav id="menu" aria-label="Navegação principal">
 
-        <a href="index.html">Início</a>
+        <a href="../index.html">Início</a>
 
         <a href="sobre.html">Quem Somos</a>
         <a href="cooperativa.html">Cooperativa</a>
@@ -39,7 +40,7 @@
 
         <a href="galeria.html">Galeria</a>
 
-        <a href="contato.html">Contato</a>
+        <a class="nav-contato" href="contato.html">Contato</a>
 
     </nav>
 
@@ -53,12 +54,8 @@
 <section id="contato">
 
     <div class="secao-cabecalho">
-
-        <span class="secao-subtitulo">
-            FALE CONOSCO
-        </span>
-
-        <h2>Onde Estamos</h2>
+        <span class="secao-subtitulo">Fale conosco</span>
+        <h1>Onde Estamos</h1>
 
         <p class="introducao">
             A COOMAP está localizada na Comunidade Deus Proverá,
@@ -95,6 +92,7 @@
             <a
                 href="https://wa.me/5591991519275"
                 target="_blank"
+                rel="noopener noreferrer"
             >
                 (91) 99151-9275
             </a>
@@ -130,6 +128,7 @@
             <a
                 href="https://www.instagram.com/cooperativa_coomap?stkn=MWdhMXhqNHIxbW1u"
                 target="_blank"
+                rel="noopener noreferrer"
             >
                 Instagram da COOMAP
             </a>
@@ -156,6 +155,7 @@
         class="botao-mapa"
         href="https://www.google.com/maps?q=-2.2174371843189653,-49.982412065628786"
         target="_blank"
+        rel="noopener noreferrer"
     >
         Abrir no Google Maps
     </a>
@@ -170,7 +170,8 @@
                 width="100%"
                 height="450"
                 style="border:0;"
-                allowfullscreen=""
+                title="Localização da COOMAP na Comunidade Deus Proverá"
+                allowfullscreen
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
@@ -188,18 +189,19 @@
     <footer>
 
         <p>
-            © 2026 COOMAP - Todos os direitos reservados.
+            © <span class="ano-atual">2026</span> COOMAP - Todos os direitos reservados.
         </p>
 
         <p>
             Cooperativa Mista Agroextrativista
             da RESEX Arioca Pruanã
         </p>
+        <a href="https://wa.me/5591991519275" target="_blank" rel="noopener noreferrer">Fale com a COOMAP pelo WhatsApp</a>
 
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 
 </body>
 

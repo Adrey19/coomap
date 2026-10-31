@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>COOMAP | Cooperativa Mista Agroextrativista</title>
+    <meta name="description" content="Conheça a COOMAP, cooperativa mista agroextrativista da RESEX Arioca Pruanã, em Oeiras do Pará.">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,30 +17,30 @@
 <!-- CABEÇALHO -->
 <header>
 
-    <div class="logo">
-        <img src="img/logo-coomap.png" alt="Logo da COOMAP">
-    </div>
+    <a class="logo" href="index.html" aria-label="COOMAP - página inicial">
+        <img src="img/logo-coomap.png" alt="COOMAP">
+        <span>COOMAP</span>
+    </a>
 
-    <!-- BOTÃO DO MENU MOBILE -->
-    <button class="menu-mobile" id="menu-mobile">
-        ☰
+    <button class="menu-mobile" id="menu-mobile" type="button" aria-label="Abrir menu" aria-controls="menu" aria-expanded="false">
+        <span aria-hidden="true">☰</span>
     </button>
 
-    <nav id="menu">
+    <nav id="menu" aria-label="Navegação principal">
 
         <a href="index.html">Início</a>
 
-        <a href="sobre.html">Quem Somos</a>
-        <a href="cooperativa.html">Cooperativa</a>
+        <a href="pages/sobre.html">Quem Somos</a>
+        <a href="pages/cooperativa.html">Cooperativa</a>
 
-        <a href="produtos.html">Produtos</a>
-        <a href="noticias.html">Notícias</a>
+        <a href="pages/produtos.html">Produtos</a>
+        <a href="pages/noticias.html">Notícias</a>
 
-        <a href="atividades.html">Atividades</a>
+        <a href="pages/atividades.html">Atividades</a>
 
-        <a href="galeria.html">Galeria</a>
+        <a href="pages/galeria.html">Galeria</a>
 
-        <a href="contato.html">Contato</a>
+        <a class="nav-contato" href="pages/contato.html">Contato</a>
 
     </nav>
 
@@ -58,27 +59,70 @@
     <div class="banner-conteudo">
 
         <span class="banner-subtitulo">
-            RESEX ARIOCA PRUANÃ
+            Cooperativismo na RESEX Arioca Pruanã
         </span>
 
-        <h1>COOMAP</h1>
+        <h1>Juntos, cultivamos oportunidades</h1>
 
         <p class="banner-descricao">
-            Cooperativa Mista Agroextrativista
-            da RESEX Arioca Pruanã
+            Somos a COOMAP, Cooperativa Mista Agroextrativista
+            da RESEX Arioca Pruanã.
         </p>
 
         <p class="banner-frase">
-            Organização, produção e desenvolvimento
-            para as famílias da nossa comunidade.
+            Organização, produção e trabalho coletivo
+            fortalecendo as famílias da nossa comunidade.
         </p>
 
-        <a href="sobre.html" class="botao-principal">
-            Conheça a COOMAP
-        </a>
+        <div class="banner-acoes">
+            <a href="pages/cooperativa.html" class="botao-principal">Conheça a cooperativa</a>
+            <a href="pages/produtos.html" class="botao-secundario">Veja nossos produtos</a>
+        </div>
 
     </div>
 
+</section>
+
+<section class="inicio-apresentacao" aria-labelledby="inicio-apresentacao-titulo">
+    <div class="secao-cabecalho">
+        <span class="secao-subtitulo">Nossa força é coletiva</span>
+        <h2 id="inicio-apresentacao-titulo">Cooperação que nasce da comunidade</h2>
+        <p class="introducao">
+            Na Comunidade Deus Proverá, às margens do Rio Oeiras,
+            a COOMAP reúne moradores da RESEX Arioca Pruanã em torno
+            da produção agroextrativista e do fortalecimento da comunidade.
+        </p>
+    </div>
+
+    <div class="inicio-destaques">
+        <article class="inicio-card">
+            <span class="inicio-icone" aria-hidden="true">🤝</span>
+            <h3>Trabalho em união</h3>
+            <p>A organização coletiva valoriza o conhecimento e o trabalho das famílias cooperadas.</p>
+            <a href="pages/cooperativa.html">Saiba mais sobre a cooperativa</a>
+        </article>
+        <article class="inicio-card">
+            <span class="inicio-icone" aria-hidden="true">🌱</span>
+            <h3>Produção local</h3>
+            <p>Conheça produtos e atividades ligados à agricultura familiar e ao agroextrativismo.</p>
+            <a href="pages/produtos.html">Conheça nossos produtos</a>
+        </article>
+        <article class="inicio-card">
+            <span class="inicio-icone" aria-hidden="true">📍</span>
+            <h3>Território e comunidade</h3>
+            <p>Estamos na Comunidade Deus Proverá, em Oeiras do Pará, na RESEX Arioca Pruanã.</p>
+            <a href="pages/contato.html">Veja onde estamos</a>
+        </article>
+    </div>
+</section>
+
+<section class="inicio-convite" aria-labelledby="inicio-convite-titulo">
+    <div>
+        <span class="secao-subtitulo">Vamos conversar?</span>
+        <h2 id="inicio-convite-titulo">Conheça de perto o trabalho da COOMAP</h2>
+        <p>Entre em contato para saber mais sobre a cooperativa, seus produtos e suas atividades.</p>
+    </div>
+    <a class="botao-principal" href="pages/contato.html">Fale com a COOMAP</a>
 </section>
 
     </main>
@@ -88,13 +132,14 @@
     <footer>
 
         <p>
-            © 2026 COOMAP - Todos os direitos reservados.
+            © <span class="ano-atual">2026</span> COOMAP - Todos os direitos reservados.
         </p>
 
         <p>
             Cooperativa Mista Agroextrativista
             da RESEX Arioca Pruanã
         </p>
+        <a href="pages/contato.html">Entre em contato com a cooperativa</a>
 
     </footer>
 
